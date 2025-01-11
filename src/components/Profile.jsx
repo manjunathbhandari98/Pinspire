@@ -1,16 +1,18 @@
 import React, { useState } from "react";
+import ProfileImage from "../assets/images/profile.jpeg";
 
 const Profile = () => {
-  const [profileImage, setProfileImage] =
-    useState("../assets/images/logo.png");
+  const [hasProfile, setHasProfile] =
+    useState(true);
+  useState(true);
   return (
     <div className="rounded-full cursor-pointer">
-      {profileImage ? (
+      {hasProfile ? (
         <img
-          src={profileImage}
+          src={ProfileImage}
           alt=""
-          width="20px"
-          height="20px"
+          width="36px"
+          height="36px"
           className="rounded-full"
         />
       ) : (

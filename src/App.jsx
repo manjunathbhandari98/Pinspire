@@ -5,6 +5,7 @@ import Create from "./pages/Create";
 import Message from "./pages/Messages";
 import Notification from "./pages/Notification";
 import Profile from "./pages/Profile";
+import Flick from "./pages/Flick";
 import { Routes, Route } from "react-router-dom";
 const App = () => {
   return (
@@ -26,7 +27,11 @@ const App = () => {
               element={<Message />}
             />
             <Route
-              path="/notification"
+              path="/flicks"
+              element={<Flick />}
+            />
+            <Route
+              path="/notifications"
               element={<Notification />}
             />
             <Route
