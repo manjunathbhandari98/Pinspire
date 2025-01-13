@@ -7,6 +7,8 @@ import Notification from "./pages/Notification";
 import Profile from "./pages/Profile";
 import Flick from "./pages/Flick";
 import { Routes, Route } from "react-router-dom";
+import BottomBar from "./pages/BottomBar";
+import SearchPage from "./pages/SearchPage";
 const App = () => {
   return (
     <>
@@ -42,8 +44,13 @@ const App = () => {
               path="/create"
               element={<Create />}
             />
+            <Route
+              path="/search-page"
+              element={<SearchPage />}
+            />
           </Routes>
         </div>
+        <BottomBar />
       </div>
     </>
   );
